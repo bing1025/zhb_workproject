@@ -1,0 +1,12 @@
+#spring-boot-mail
+./spring-boot-mail/target/*
+./spring-boot-mail/.setting/*
+./spring-boot-mail/.classpath
+./spring-boot-mail/.project
+
+
+#spring-boot-zhb-web
+./spring-boot-zhb-web/target/*
+./spring-boot-zhb-web/.setting/*
+./spring-boot-zhb-web/.classpath
+./spring-boot-zhb-web/.project

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "9f0fec97-2f5d-400e-b14d-73ee5af235c3",
+		"name": "spring-boot-mail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/consignee/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"zhb\",\n\t\"userName\":\"飞雪\",\n\t\"mailGroup\":\"邮箱组群\",\n\t\"userRole\":\"邮箱角色\",\n\t\"mailAddr\":\"123@qq.com\",\n\t\"phoneNum\":\"123456\",\n\t\"isEnable\":\"1\"\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/consignee/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consignee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/consignee/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":113,\n\t\"userId\":\"zhb113\",\n\t\"userName\":\"飞雪222\",\n\t\"mailGroup\":\"邮箱组群222\",\n\t\"userRole\":\"邮箱角色333\",\n\t\"mailAddr\":\"123@qq.com\",\n\t\"phoneNum\":\"123456\",\n\t\"isEnable\":false\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/consignee/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consignee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/consignee/page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pageNum\":1,\n\t\"pageSize\":5,\n\t\"order\":\"id\",\n\t\"sort\":\"asc\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/consignee/page",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consignee",
+						"page"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/consignee/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[115,116]"
+				},
+				"url": {
+					"raw": "localhost:8080/consignee/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consignee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/consignee/sendMail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\":\"这是邮件正文\",\n \"subject\":\"这是邮件主题\",\n  \"userId\":null,\n \"mailGroups\":[\"邮箱组群111\",\"邮箱组群222\"],\n \"ids\":[111,112]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/consignee/sendMail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consignee",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
